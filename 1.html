@@ -1,23 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Como integrar o Bulma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
 <body>
-    <H1>Como usar?</H1>
-    <p>arigato gozaimasu</p>
-    <ol>
-        <li>Via CDN</li>
-        <p>Esta é a abordagem mais ágil para integrar o Bulma ao projeto. Consiste em adicionar o link fornecido por servidores de distribuição (como jsDelivr ou unpkg) diretamente na tag <head> do documento HTML. É um método excelente para prototipagem rápida e projetos acadêmicos, pois dispensa o download de arquivos locais. No entanto, exige conexão ativa com a internet para que o layout seja renderizado corretamente.</p>
-        <li>Download do arquivo CSS</li>
-        <p>Este método envolve baixar o pacote oficial do framework, extrair o arquivo bulma.min.css e incluí-lo fisicamente no diretório do projeto. A principal vantagem desta abordagem é a total independência de conexão com a internet. O desenvolvimento e a apresentação podem ser realizados offline com a garantia de que a interface não sofrerá quebras de estilo.</p>
-        <li>Pelo NPM ou Yarn</li>
-        <p>É o padrão estabelecido pelo mercado para ambientes de desenvolvimento profissional. Utilizando o terminal, o Bulma é instalado como uma dependência direta do projeto. Esta é a prática recomendada ao desenvolver aplicações escaláveis ou ao integrar o framework com ecossistemas JavaScript modernos, tais como React, Vue.js ou Angular, permitindo um controle rigoroso das versões utilizadas.</p>
-        <li>Sass</li>
-        <p>O ecossistema do Bulma é integralmente desenvolvido utilizando Sass, um robusto pré-processador CSS. Ao optar por importar o código-fonte .scss em vez do CSS compilado, os desenvolvedores ganham controle absoluto sobre o design system. É possível sobrescrever variáveis globais (como a paleta de cores principal, tipografia e espaçamentos da grade) antes da compilação, resultando em uma interface altamente personalizada e única.</p>
-    </ol>
-    <a href="2.html">Próximo</a>
+    <section class="hero is-link is-small">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">
+                    Como usar o Bulma?
+                </h1>
+                <p class="subtitle is-4 mt-4">
+                    As 4 formas de integrar o framework a um projeto.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline is-centered">
+                
+                <div class="column is-6-tablet is-5-desktop">
+                    <div class="box" style="height: 100%;">
+                        <h2 class="title is-4 has-text-link">Via CDN</h2>
+                        <p class="has-text-grey-dark">Esta é a abordagem mais ágil para integrar o Bulma ao projeto. Consiste em adicionar o link fornecido por servidores de distribuição (como jsDelivr ou unpkg) diretamente na tag <code>&lt;head&gt;</code> do documento HTML. É um método excelente para prototipagem rápida e projetos acadêmicos, pois dispensa o download de arquivos locais. No entanto, exige conexão ativa com a internet para que o layout seja renderizado corretamente.</p>
+                    </div>
+                </div>
+
+                
+                <div class="column is-6-tablet is-5-desktop">
+                    <div class="box" style="height: 100%;">
+                        <h2 class="title is-4 has-text-link">Download do arquivo CSS</h2>
+                        <p class="has-text-grey-dark">Este método envolve baixar o pacote oficial do framework, extrair o arquivo <code>bulma.min.css</code> e incluí-lo fisicamente no diretório do projeto. A principal vantagem desta abordagem é a total independência de conexão com a internet. O desenvolvimento e a apresentação podem ser realizados offline com a garantia de que a interface não sofrerá quebras de estilo.</p>
+                    </div>
+                </div>
+
+                
+                <div class="column is-6-tablet is-5-desktop">
+                    <div class="box" style="height: 100%;">
+                        <h2 class="title is-4 has-text-link">Pelo Npm ou Yarn</h2>
+                        <p class="has-text-grey-dark">É o padrão estabelecido pelo mercado para ambientes de desenvolvimento profissional. Utilizando o terminal, o Bulma é instalado como uma dependência direta do projeto. Esta é a prática recomendada ao desenvolver aplicações escaláveis ou ao integrar o framework com ecossistemas JavaScript modernos, tais como React, Vue.js ou Angular, permitindo um controle rigoroso das versões utilizadas.</p>
+                    </div>
+                </div>
+
+                
+                <div class="column is-6-tablet is-5-desktop">
+                    <div class="box" style="height: 100%;">
+                        <h2 class="title is-4 has-text-link">Sass</h2>
+                        <p class="has-text-grey-dark">O ecossistema do Bulma é integralmente desenvolvido utilizando Sass, um robusto pré-processador CSS. Ao optar por importar o código-fonte <code>.scss</code> em vez do CSS compilado, os desenvolvedores ganham controle absoluto sobre o design system. É possível sobrescrever variáveis globais (como a paleta de cores principal, tipografia e espaçamentos da grade) antes da compilação, resultando em uma interface altamente personalizada e única.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section pt-0">
+        <div class="container pb-6">
+            <nav class="pagination is-centered" role="navigation">
+                
+                <a class="pagination-previous" disabled>Anterior</a>
+                <a href="2.html" class="pagination-next">Próximo</a>
+                
+                <ul class="pagination-list">
+                    <li>
+                        <a href="1.html" class="pagination-link is-current">1</a>
+                    </li>
+
+                    <li>
+                        <a href="2.html" class="pagination-link">2</a>
+                    </li
+
+                    <li>
+                        <a href="3.html" class="pagination-link">3</a>
+                    </li
+
+                    <li>
+                        <a href="4.html" class="pagination-link">4</a>
+                    </li
+
+                    <li>
+                        <a href="5.html" class="pagination-link">5</a>
+                    </li
+
+                    <li>
+                        <a href="6.html" class="pagination-link">6</a>
+                    </li
+
+                </ul>
+            </nav>
+        </div>
+    </section>
+
 </body>
 </html>
