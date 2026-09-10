@@ -1,29 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
 <body>
-    <h1>Vantagens e Desvantagens</h1>
-    <ul>
-        <li>Vantagens</li>
-        <ul>
-            <li><b>Curva de Aprendizado e Sintaxe Semântica:</b>O Bulma utiliza uma nomenclatura de classes altamente intuitiva e semântica, assemelhando-se à linguagem natural (ex: button is-large is-primary). Isso reduz drasticamente a curva de aprendizado e facilita a leitura do código por outros desenvolvedores.</li>
-            <li><b>Arquitetura Baseada em Flexbox:</b>O framework foi desenvolvido integralmente sobre o modelo Flexbox. Isso proporciona um sistema de grid robusto, moderno e fluido, resolvendo problemas complexos de alinhamento e responsividade sem recorrer a técnicas obsoletas de CSS.</li>
-            <li><b>Independência de JavaScript:</b>O Bulma é focado exclusivamente no aspecto visual e estrutural (CSS puro). Ao não impor a utilização de bibliotecas JavaScript de terceiros, ele mantém o projeto mais leve e evita conflitos de dependências, dando liberdade para o desenvolvedor escolher o ecossistema JS que preferir.</li>
-        </ul>
-    </ul>
-    <ul>
-        <li>Desvantagens</li>
-        <ul>
-            <li><b>Verbosidade no HTML:</b>Devido à sua estrutura baseada na combinação de múltiplos modificadores, o código HTML pode se tornar excessivamente denso e poluído com dezenas de classes, o que pode dificultar a manutenção em arquivos muito extensos.</li>
-            <li><b>Ausência de Interatividade Nativa:</b>A vantagem de não possuir JavaScript também atua como seu principal revés. Componentes que exigem interatividade para funcionar (como modais, abas (tabs) e menus dropdown) não operam nativamente. O desenvolvedor é obrigado a escrever a lógica de comportamento do zero.</li>
-            <li><b>Adoção de Mercado em Declínio:</b>Embora seja uma ferramenta sólida, o Bulma tem perdido considerável espaço no mercado e na adoção pela comunidade de desenvolvedores frente a alternativas baseadas em utilitários, com destaque absoluto para o Tailwind CSS.</li>
-        </ul>
-    </ul>
-    <a href="1.html">Anterior</a>
-    <a href="3.html">Próximo</a>
+    <section class="hero is-primary is-small">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-1">
+                    Vantagens e Desvantagens
+                </h1>
+                <p class="subtitle is-4 mt-4">
+                    Os prós e contras do framework.
+                </p>
+            </div>
+        </div>
+    </section>
+
+     <section class="section">
+        <div class="container">
+            <div class="columns is-desktop is-variable is-6 mt-2">
+
+                <div class="column">
+                    <article class="message is-success is-large">
+                        <div class="message-header">
+                            <p>Vantagens</p>
+                        </div>
+                        <div class="message-body content is-normal">
+                            <ul>
+                                <li class="mb-4">
+                                    <strong class="has-text-success-dark">
+                                        Curva de Aprendizado e Sintaxe Semântica:
+                                    </strong> 
+                                    O Bulma utiliza uma nomenclatura de classes altamente intuitiva e semântica, assemelhando-se à linguagem natural (ex: <code>button is-large is-primary</code>). Isso reduz drasticamente a curva de aprendizado e facilita a leitura do código.
+                                </li>
+
+                                <li>
+                                    <strong class="has-text-success-dark">Independência de JavaScript:</strong> O Bulma é focado exclusivamente no aspecto visual e estrutural (CSS puro). Ao não impor a utilização de bibliotecas JavaScript de terceiros, ele mantém o projeto mais leve e evita conflitos.
+                                </li>
+
+                                <li class="mb-4">
+                                    <strong class="has-text-success-dark">Arquitetura Baseada em Flexbox:</strong> O framework foi desenvolvido integralmente sobre o modelo Flexbox. Isso proporciona um sistema de grid robusto, moderno e fluido, resolvendo problemas complexos de alinhamento e responsividade.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                
+                <div class="column">
+                    <article class="message is-danger is-large">
+                        <div class="message-header">
+                            <p>Desvantagens</p>
+                        </div>
+                        <div class="message-body content is-normal">
+                            <ul>
+                                <li class="mb-4">
+                                    <strong class="has-text-danger-dark">Verbosidade no HTML:</strong> Devido à sua estrutura baseada na combinação de múltiplos modificadores, o código HTML pode se tornar excessivamente denso e poluído com dezenas de classes, dificultando a manutenção.
+                                </li>
+
+                                <li class="mb-4">
+                                    <strong class="has-text-danger-dark">Ausência de Interatividade Nativa:</strong> A vantagem de não possuir JavaScript também atua como seu principal revés. Componentes como modais, abas e dropdowns não operam nativamente, obrigando o desenvolvedor a escrever a lógica do zero.
+                                </li>
+
+                                <li>
+                                    <strong class="has-text-danger-dark">Adoção de Mercado em Declínio:</strong> Embora seja uma ferramenta sólida, o Bulma tem perdido considerável espaço no mercado e na adoção pela comunidade frente a alternativas baseadas em utilitários, como o Tailwind CSS.
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section pt-0">
+        <div class="container pb-6">
+            <nav class="pagination is-centered" role="navigation">
+                
+                <a href="1.html" class="pagination-previous">Anterior</a>
+                <a href="3.html" class="pagination-next">Próximo</a>
+                
+                <ul class="pagination-list">
+                    <li>
+                        <a href="1.html" class="pagination-link">1</a>
+                    </li>
+
+                    <li>
+                        <a href="2.html" class="pagination-link is-current">2</a>
+                    </li
+
+                    <li>
+                        <a href="3.html" class="pagination-link">3</a>
+                    </li
+
+                    <li>
+                        <a href="4.html" class="pagination-link">4</a>
+                    </li
+
+                    <li>
+                        <a href="5.html" class="pagination-link">5</a>
+                    </li
+
+                    <li>
+                        <a href="6.html" class="pagination-link">6</a>
+                    </li
+
+                </ul>
+            </nav>
+        </div>
+    </section>
 </body>
 </html>
