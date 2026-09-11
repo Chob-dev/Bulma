@@ -1,13 +1,93 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mobile First - Bulma</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 </head>
 <body>
-    <h1>Otimização para Dispositivos Móveis (Mobile First)</h1>
-    <a href="4.html">Anterior</a>
-    <a href="6.html">Próximo</a>
+
+    <section class="hero is-success is-small mb-6">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Otimização para Dispositivos Móveis (Mobile First)
+                </h1>
+                <p class="subtitle is-4 mt-4">
+                    A abordagem Mobile First
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section pt-0">
+        <div class="container">
+            <div class="box">
+
+                <article class="media">
+                    <div class="media-content">
+
+                        <div class="content">
+                            <p>
+                                <strong>Desenvolvimento Focado no Celular</strong> <br>
+                                O Bulma é construido nativamente com a filosofia <em>Mobile First</em>. Isso significa que todo o código CSS é otimizado inicialmente para telas pequenas.
+                                Regras adicionais de layout e redimensionamento são aplicadas progressivamente apenas quando a tela atinge os breakpoints de tablet ou desktop.
+                            </p>
+
+                            <p>
+                                Como resultado, a leitura no celular é mais rápida, o consumo de dados é menor e a interface se adapta naturalmente sem a necessidade de sobrescrever dezenas de estilos.
+                            </p>
+                        </div>
+
+                        <nav class="level is-mobile mt-4">
+                            <div class="level-left">
+                                <span class="tag is-success is-medium">100% Responsivo</span>
+                            </div>
+                        </nav>
+
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section pt-0">
+        <div class="container pb-6">
+            <nav class="pagination is-centered mt-4" role="navigation">
+                
+                <a href="4.html" class="pagination-previous">Anterior</a>
+                <a href="6.html" class="pagination-next">Próximo</a>
+                
+                <ul class="pagination-list">
+                    <li>
+                        <a href="1.html" class="pagination-link">1</a>
+                    </li>
+
+                    <li>
+                        <a href="2.html" class="pagination-link">2</a>
+                    </li
+
+                    <li>
+                        <a href="3.html" class="pagination-link">3</a>
+                    </li
+
+                    <li>
+                        <a href="4.html" class="pagination-link">4</a>
+                    </li
+
+                    <li>
+                        <a href="5.html" class="pagination-link is-current">5</a>
+                    </li
+
+                    <li>
+                        <a href="6.html" class="pagination-link">6</a>
+                    </li
+                </ul>
+            </nav>
+        </div>
+    </section>
 </body>
 </html>
