@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria HyperBook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        #nav-toggle{display: none;}
+        #nav-toggle:checked ~ .navbar-menu{display: block !important;}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar is-dark" role="navigation">
+        <div class="container">
+
+            <input type="checkbox" name="" id="nav-toggle">
+
+            <div class="navbar-brand">
+                <a href="index.html" class="navbar-item is-size-4">
+                    <strong class="has-text-weight-bold">Hyper<span class="has-text-warning">Book</span></strong>
+                </a>
+
+                <label for="nav-toggle" role="button" class="navbar-burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </label>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="sobre.html" class="navbar-item">Sobre</a>
+                    <a href="login.html" class="navbar-item">Sair</a>
+                    <a href="carrinho.html" class="navbar-item">Carrinho</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section is-flex-grow-1">
+        <div class="container" style="max-width: 800px;">
+            <div class="box p-6 shadow-lg">
+
+                <div class="content">
+                    <h1 class="title is-2 border-bottom">HyperBook</h1>
+                    
+                    <p>
+                        <strong>Autores:</strong> Grazielli Sena, Ricardo Jorge, Vinícius Lira<br>
+                        <strong>Disciplina:</strong> Programação Web II<br>
+                    </p>
+
+                    <hr>
+
+                    <h2>Sobre o Projeto</h2>
+                    <p>
+                        O <strong>HyperBook</strong> é uma aplicação front-end que simula uma livraria virtual com curadoria de títulos clássicos e contemporâneos. O objetivo deste projeto para a disciplina de <strong>Web II</strong> foi evoluir uma interface estática para um design system moderno, adotando boas práticas de UI/UX, componentização de estilos e arquitetura mobile-first.
+                    </p>
+
+                    <h2>Funcionalidades</h2>
+                    <ul>
+                        <li><strong>Catálogo de Livros:</strong> Visualização em grid responsivo com paginação e destaques.</li>
+                        <li><strong>Autenticação:</strong> Telas de login e cadastro com validação HTML5.</li>
+                        <li><strong>Carrinho de Compras:</strong> Gerenciamento de itens, cálculo de subtotal e checkout com modal de confirmação.</li>
+                        <li><strong>Layout Mobile-First:</strong> Interface que se adapta a qualquer tamanho de tela, com navegação otimizada para smartphones.</li>
+                    </ul>
+
+                    <h2>Tecnologias e Ferramentas</h2>
+                    <ul>
+                        <li><strong>HTML5:</strong> Estruturação semântica e acessibilidade.</li>
+                        <li><strong>Bulma CSS (v1.0.4):</strong> Framework CSS moderno baseado em Flexbox para desenvolvimento ágil e responsivo.</li>
+                        <li><strong>CSS3 Customizado:</strong> "Hacks" (como <code>:target</code> e <code>:checked</code>) para criar interatividade em modais e menus responsivos sem a dependência obrigatória de JavaScript.</li>
+                    </ul>
+
+                    <h2>Aprendizados e Desafios</h2>
+                    <p>
+                        A transição de <em>Web I</em> para <em>Web II</em> exigiu uma forte refatoração de código. O principal desafio foi migrar um layout de CSS puro e engessado para a estrutura do framework Bulma.
+                    </p>
+                    <p>
+                        Foi necessário compreender a lógica de grids (colunas dinâmicas), utilitários de espaçamento (margin/padding) e resolver conflitos de responsividade em telas menores (como o ajuste da barra de promoções fixa e o menu sanduíche). Essa etapa consolidou conhecimentos essenciais sobre frameworks de mercado e manutenção de código front-end limpo.
+                    </p>
+                </div>
+
+                <div class="has-text-centered mt-6 pt-4">
+                    <a href="index.html" class="button is-link is-outlined">
+                        ← Voltar ao catálogo
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white p-5">
+        <div class="content has-text-centered">
+            <p>
+                © 2026 <strong class="has-text-warning">HyperBook</strong> — Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

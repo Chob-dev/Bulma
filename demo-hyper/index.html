@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria HyperBook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        #nav-toggle{display: none;}
+        #nav-toggle:checked ~ .navbar-menu{display: block !important;}
+
+        .promo-fixa{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 2000;
+            max-width: 300px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .tag-desconto {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+        }
+
+        .promo-fixa:hover{transform: translateY(-5px);}
+        .capa-destaque{max-width: 200px; width: 100%;}
+
+
+        @media (max-widght: 768px){
+            .promo-fixa{display: none !important;}
+            .capa-destaque{max-width: 130px;}
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar is-dark" role="navigation">
+        <div class="container">
+
+            <input type="checkbox" name="" id="nav-toggle">
+
+            <div class="navbar-brand">
+                <a href="index.html" class="navbar-item is-size-4">
+                    <strong class="has-text-weight-bold">Hyper<span class="has-text-warning">Book</span></strong>
+                </a>
+
+                <label for="nav-toggle" role="button" class="navbar-burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </label>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="sobre.html" class="navbar-item">Sobre</a>
+                    <a href="login.html" class="navbar-item">Sair</a>
+                    <a href="carrinho.html" class="navbar-item">Carrinho</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <a href="#" class="box p-3 is-flex is-align-items-center promo-fixa">
+        <figure class="image is-64x64 mr-3">
+            <img src="imagens/dom-casmurro.jpg" alt="" style="object-fit: cover; height: 100%;">
+        </figure>
+
+        <div>
+            <span class="tag is-danger is-light is-small is-rounded mb-1">Promoção</span>
+            <p class="is-size-6 mb-1 has-text-dark has-text-weight-bold">Dom Casmurro</p>
+            <p class="is-size-7">
+                <del class="has-text-grey">R$ 59,90</del>
+                <strong class="has-text-danger">R$ 34,90</strong>
+            </p>
+        </div>
+    </a>
+
+    <section class="section">
+        <div class="container">
+            <div class="mb-6">
+                <h1 class="title is-2">Catálogo</h1>
+
+                <p class="subtitle is-5 has-text-grey">Os melhores títulos da literatura brasileira e mundial</p>
+            </div>
+
+            <div class="box mb-6">
+                <div class="columns is-vcentered is-mobile is-multiline">
+                    <div class="column is-12-mobile is-3-tablet has-text-centered">
+                        <figure class="image is-3by4 is-inline-block capa-destaque"
+                        style="max-width: 200px;">
+                            <img src="imagens/dom-casmurro.jpg" alt="">
+                        </figure>
+                    </div>
+
+                    <div class="column is-12-mobile is-9-tablet has-text-centered-mobile">
+                        <span class="tag is-warning is-rounded mb-3">
+                            ✦ Destaque do mês ✦
+                        </span>
+
+                        <h2 class="title is-3 is-size-4-mobile mb-2">Dom Casmurro</h2>
+
+                        <p class="subtitle is-6 has-text-grey mb-4">Machado de Assis · Literatura Brasileira</p>
+
+                        <p class="content is-size-6 is-size-7-mobile">O grande romance de Machado de Assis que ainda divide opiniões: Capitu traiu ou não traiu? Uma obra-prima da literatura brasileira que continua prendendo leitores há mais de um século.</p>
+
+                        <div class="mb-4">
+                            <span class="is-size-5 has-text-grey-light"><del>R$ 59,90</del></span>
+
+                            <span class="is-size-3 has-text-danger has-text-weight-bold ml-2">R$ 34,90</span>
+                        </div>
+
+                        <div class="buttons is-centered-mobile">
+                            <a href="carrinho.html" class="button is-link is-small-mobile">Adicionar ao carrinho</a>
+                            <a href="#" class="button is-light is-small-mobile">Ver detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs is-toggle is-centered is-small mb-6">
+                <ul>
+                    <li class="is-active"><a href="#">Todos</a></li>
+                    <li><a href="#">Literatura Brasileira</a></li>
+                    <li><a href="#">Ficção Científica</a></li>
+                    <li><a href="#">Fantasia</a></li>
+                    <li><a href="#">Clássicos</a></li>
+                    <li><a href="#">Distopia</a></li>
+                    <li><a href="#">Romance Policial</a></li>
+                </ul>
+            </div>
+
+            <div class="columns is-multiline is-mobile">
+                <div class="column is-3-desktop is-4-tablet is-6-mobile">
+                    <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+                        <div class="card-image p-4 has-text-centered position-relative">
+                            <span class="tag is-danger is-absolute tag-desconto">-42%</span>
+
+                            <figure class="image is-3by4 is-inline-block" style="width: 100%; max-width: 150px;">
+                                <img src="imagens/dom-casmurro.jpg" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="card-content is-flex-grow-1 p-3">
+                            <p class="is-size-7 has-text-link has-text-weight-semibold">Literatura Brasileira</p>
+
+                            <p class="title is-5 mb-1 mt-1">Dom Casmurro</p>
+
+                            <p class="subtitle is-7 has-text-grey mb-3">Machado de Assis</p>
+
+                            <div class="mt-auto">
+                                <del class="is-size-7 has-text-grey">R$ 59,90</del>
+                                <strong class="is-size-5 has-text-danger block">R$ 34,90</strong>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="card-footer-item has-text-link has-background-link-light has-text-weight-bold">+ Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3-desktop is-4-tablet is-6-mobile">
+                    <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+                        <div class="card-image p-4 has-text-centered position-relative">
+                            <figure class="image is-3by4 is-inline-block" style="width: 100%; max-width: 150px;">
+                                <img src="imagens/fundacao.webp" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="card-content is-flex-grow-1 p-3">
+                            <p class="is-size-7 has-text-link has-text-weight-semibold">Ficção Científica</p>
+
+                            <p class="title is-5 mb-1 mt-1">Fundação</p>
+
+                            <p class="subtitle is-7 has-text-grey mb-3">Isaac Asimov</p>
+
+                            <div class="mt-auto">
+                                <strong class="is-size-5 has-text-danger block">R$ 49,90</strong>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="card-footer-item has-text-link has-background-link-light has-text-weight-bold">+ Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3-desktop is-4-tablet is-6-mobile">
+                    <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+                        <div class="card-image p-4 has-text-centered position-relative">
+                            <figure class="image is-3by4 is-inline-block" style="width: 100%; max-width: 150px;">
+                                <img src="imagens/o hobbit.jpg" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="card-content is-flex-grow-1 p-3">
+                            <p class="is-size-7 has-text-link has-text-weight-semibold">Fantasia</p>
+
+                            <p class="title is-5 mb-1 mt-1">O Hobbit</p>
+
+                            <p class="subtitle is-7 has-text-grey mb-3">J.R.R. Tolkien</p>
+
+                            <div class="mt-auto">
+                                <strong class="is-size-5 has-text-danger block">R$ 39,90</strong>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="card-footer-item has-text-link has-background-link-light has-text-weight-bold">+ Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3-desktop is-4-tablet is-6-mobile">
+                    <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+                        <div class="card-image p-4 has-text-centered position-relative">
+
+                            <span class="tag is-danger is-absolute tag-desconto">-20px</span>
+
+                            <figure class="image is-3by4 is-inline-block" style="width: 100%; max-width: 150px;">
+                                <img src="imagens/o medico e o monstro.jpg" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="card-content is-flex-grow-1 p-3">
+                            <p class="is-size-7 has-text-link has-text-weight-semibold">Clássico</p>
+
+                            <p class="title is-5 mb-1 mt-1">O Médico e o Monstro</p>
+
+                            <p class="subtitle is-7 has-text-grey mb-3">Robert L. Stevenson</p>
+
+                            <div class="mt-auto">
+                                <del class="is-size-7 has-text-grey">R$ 35,90</del>
+                                <strong class="is-size-5 has-text-danger block">R$ 28,90</strong>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="card-footer-item has-text-link has-background-link-light has-text-weight-bold">+ Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3-desktop is-4-tablet is-6-mobile">
+                    <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+                        <div class="card-image p-4 has-text-centered position-relative">
+                            <figure class="image is-3by4 is-inline-block" style="width: 100%; max-width: 150px;">
+                                <img src="imagens/não tenho boca e preciso gritar.webp" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="card-content is-flex-grow-1 p-3">
+                            <p class="is-size-7 has-text-link has-text-weight-semibold">Ficção Científica</p>
+
+                            <p class="title is-5 mb-1 mt-1">Não Tenho Boca, e Preciso Gritar</p>
+
+                            <p class="subtitle is-7 has-text-grey mb-3">Harlan Ellison</p>
+
+                            <div class="mt-auto">
+                                <strong class="is-size-5 has-text-danger block">R$ 64,90</strong>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="card-footer-item has-text-link has-background-link-light has-text-weight-bold">+ Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3-desktop is-4-tablet is-6-mobile">
+                    <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+                        <div class="card-image p-4 has-text-centered position-relative">
+                            <figure class="image is-3by4 is-inline-block" style="width: 100%; max-width: 150px;">
+                                <img src="imagens/assassinato no expresso oriente.jpg" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="card-content is-flex-grow-1 p-3">
+                            <p class="is-size-7 has-text-link has-text-weight-semibold">Romance Policial</p>
+
+                            <p class="title is-5 mb-1 mt-1">Assassinato no Expresso Oriente</p>
+
+                            <p class="subtitle is-7 has-text-grey mb-3">Agatha Christie</p>
+
+                            <div class="mt-auto">
+                                <strong class="is-size-5 has-text-danger block">R$ 42,90</strong>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="card-footer-item has-text-link has-background-link-light has-text-weight-bold">+ Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3-desktop is-4-tablet is-6-mobile">
+                    <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+                        <div class="card-image p-4 has-text-centered position-relative">
+                            <figure class="image is-3by4 is-inline-block" style="width: 100%; max-width: 150px;">
+                                <img src="imagens/1984.jpg" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="card-content is-flex-grow-1 p-3">
+                            <p class="is-size-7 has-text-link has-text-weight-semibold">Distopia</p>
+
+                            <p class="title is-5 mb-1 mt-1">1984</p>
+
+                            <p class="subtitle is-7 has-text-grey mb-3">George Orwell</p>
+
+                            <div class="mt-auto">
+                                <strong class="is-size-5 has-text-danger block">R$ 38,90</strong>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="card-footer-item has-text-link has-background-link-light has-text-weight-bold">+ Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-3-desktop is-4-tablet is-6-mobile">
+                    <div class="card is-flex is-flex-direction-column" style="height: 100%;">
+                        <div class="card-image p-4 has-text-centered position-relative">
+                            <figure class="image is-3by4 is-inline-block" style="width: 100%; max-width: 150px;">
+                                <img src="imagens/grande sertao.jpg" alt="">
+                            </figure>
+                        </div>
+
+                        <div class="card-content is-flex-grow-1 p-3">
+                            <p class="is-size-7 has-text-link has-text-weight-semibold">Literatura Brasileira</p>
+
+                            <p class="title is-5 mb-1 mt-1">Grande Sertão: Veredas</p>
+
+                            <p class="subtitle is-7 has-text-grey mb-3">João Guimarães Rosa</p>
+
+                            <div class="mt-auto">
+                                <strong class="is-size-5 has-text-danger block">R$ 54,90</strong>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="carrinho.html" class="card-footer-item has-text-link has-background-link-light has-text-weight-bold">+ Carrinho</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white mt-6 p-5">
+        <div class="content has-text-centered">
+            <p>
+                © 2026 <strong class="has-text-warning">HyperBook</strong> — Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria HyperBook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        #cad-ok:target{display: flex !important; z-index: 1000;}
+    </style>
+</head>
+<body>
+
+    <div id="cad-ok" class="modal" style="display: none;">
+        <div class="modal-background"></div>
+        
+        <div class="modal-content">
+            <div class="box has-text-centered p-6">
+                <span class="is-size-1 block mb-3">
+                    <h1 class="title is-3 has-text-dark mb-5">
+                        Hyper<span class="has-text-warning">Book</span>
+                    </h1>
+                </span>
+                
+                <p class="title is-4 has-text-success">Cadastro realizado com sucesso!</p>
+
+                <p class="subtitle is-6 mt-3 mb-5">
+                    Sua conta foi criada! Clique abaixo para fazer login e começar a explorar.
+                </p>
+
+                <a href="login.html" class="button is-link is-fullwidth">Ir para o login</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero is-fullheight has-background-light">
+        <div class="hero-body p-4">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-5-desktop is-7-tablet">
+                        <div class="box p-5 shadow-lg">
+
+                            <div class="has-text-centered mb-5">
+                                <h1 class="title is-3 has-text-dark mb-1">
+                                    Hyper<span class="has-text-warning">Book</span>
+                                </h1>
+                                <p class="subtitle is-6 has-text-grey">Criar nova conta</p>
+                            </div>
+
+                            <form action="cadastro.html#cad-ok">
+
+                                <div class="field">
+                                    <label class="label" for="nome">Nome completo</label>
+                                    <div class="control">
+                                        <input class="input" type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label">Sexo</label>
+                                    <div class="control is-flex is-align-items-center" style="gap: 1rem;">
+                                        <label class="radio">
+                                            <input type="radio" name="sexo" id="sexo-f"> Feminino
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="sexo" id="sexo-m"> Masculino
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" name="sexo" id="sexo-o"> Outro
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label" for="obs">Observações</label>
+                                    <div class="control">
+                                        <textarea class="textarea" name="obs" id="obs" rows="2" placeholder="Gêneros favoritos, endereço de entrega...(opcional)"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label" for="email-cad">E-mail</label>
+                                    <div class="control">
+                                        <input class="input" type="email" name="email-cad" id="email-cad" placeholder="email@exemplo.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <label class="label" for="senha-cad">
+                                        Senha <span class="has-text-weight-light has-text-grey is-size-7">(mín. 6 caracteres, letras e números)</span>
+                                    </label>
+                                    <div class="control">
+                                        <input class="input" type="password" name="senha-cad" id="senha-cad" placeholder="••••••••" minlength="6" pattern="^(?=.*[A-Za-z])(?=.*\d).{6,}$" title="A senha deve ter ao menos 6 caracteres, incluindo letras e números" required>
+                                    </div>
+                                </div>
+
+                                <div class="field mb-5">
+                                    <label class="label" for="conf-senha">Confirmar senha</label>
+                                    <div class="control">
+                                        <input class="input" type="password" name="conf-senha" id="conf-senha" placeholder="••••••••" minlength="6" required>
+                                    </div>
+                                </div>
+
+                                <div class="field is-grouped">
+                                    <div class="control is-expanded">
+                                        <button type="submit" class="button is-link is-fullwidth has-text-weight-bold">Cadastrar</button>
+                                    </div>
+                                    <div class="control">
+                                        <button type="reset" id="btn-limpar" class="button is-light">Limpar</button>
+                                    </div>
+                                </div>
+
+                            </form>
+
+                            <div class="has-text-centered mt-4 is-size-7">
+                                <a href="login.html" class="has-text-grey-dark">← Já tenho conta</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

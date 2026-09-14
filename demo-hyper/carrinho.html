@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria HyperBook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        #nav-toggle{display: none;}
+        #nav-toggle:checked ~ .navbar-menu{display: block !important;}
+
+        #compra-ok:target{display: flex !important; z-index: 1000;}
+    </style>
+</head>
+<body class="is-flex is-flex-direction-column" style="min-height: 100vh;">
+
+    <nav class="navbar is-dark" role="navigation">
+        <div class="container">
+
+            <input type="checkbox" name="" id="nav-toggle">
+
+            <div class="navbar-brand">
+                <a href="index.html" class="navbar-item is-size-4">
+                    <strong class="has-text-weight-bold">Hyper<span class="has-text-warning">Book</span></strong>
+                </a>
+
+                <label for="nav-toggle" role="button" class="navbar-burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </label>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="sobre.html" class="navbar-item">Sobre</a>
+                    <a href="login.html" class="navbar-item">Sair</a>
+                    <a href="carrinho.html" class="navbar-item">Carrinho</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="compra-ok" class="modal" style="display: none;">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box has-text-centered p-6">
+                <span class="is-size-1 block mb-3">
+                    <h1 class="title is-3 has-text-dark mb-5">
+                        Hyper<span class="has-text-warning">Book</span>
+                    </h1>
+                </span>
+                <p class="title is-4 has-text-success">Compra realizada com sucesso!</p>
+                <p class="subtitle is-6 mt-3 mb-5">
+                    Obrigado por comprar conosco! Você receberá um e-mail de confirmação com os detalhes do pedido.
+                </p>
+                <a href="index.html" class="button is-link is-fullwidth">← Voltar à loja</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section is-flex-grow-1">
+        <div class="container" style="max-width: 900px;">
+            <div class="is-flex is-align-items-center mb-5">
+                <h1 class="title is-3 mb-0">Seu Carrinho</h1>
+            </div>
+
+            <div class="box p-0" style="overflow: hidden;">
+                <div class="table-container mb-0">
+                    <table class="table is-fullwidth is-hoverable is-vcentered mb-0">
+                        <thead class="has-background-light">
+                            <tr>
+                                <th>Livro</th>
+                                <th class="has-text-centered">Qtd</th>
+                                <th class="has-text-right">Unitário</th>
+                                <th class="has-text-right">Subtotal</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="is-flex is-align-items-center">
+                                        <figure class="image is-48x48 mr-4">
+                                            <img src="imagens/dom-casmurro.jpg" alt="" style="object-fit: cover; height: 100%; border-radius: 4px;">
+                                        </figure>
+
+                                        <div>
+                                            <p class="has-text-weight-bold has-text-dark is-size-6 mb-0">Dom Casmurro</p>
+                                            <p class="is-size-7 has-text-grey">Machado de Assis</p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="has-text-centered">2</td>
+
+                                <td class="has-text-right has-text-grey">R$ 34,90</td>
+
+                                <td class="has-text-right has-text-weight-bold">R$ 69,90</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="is-flex is-align-items-center">
+                                        <figure class="image is-48x48 mr-4">
+                                            <img src="imagens/assassinato no expresso oriente.jpg" alt="" style="object-fit: cover; height: 100%; border-radius: 4px;">
+                                        </figure>
+
+                                        <div>
+                                            <p class="has-text-weight-bold has-text-dark is-size-6 mb-0">Assassinato no Expresso Oriente</p>
+                                            <p class="is-size-7 has-text-grey">Agatha Christie</p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="has-text-centered">1</td>
+
+                                <td class="has-text-right has-text-grey">R$ 42,90</td>
+
+                                <td class="has-text-right has-text-weight-bold">R$ 42,90</td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="is-flex is-align-items-center">
+                                        <figure class="image is-48x48 mr-4">
+                                            <img src="imagens/não tenho boca e preciso gritar.webp" alt="" style="object-fit: cover; height: 100%; border-radius: 4px;">
+                                        </figure>
+
+                                        <div>
+                                            <p class="has-text-weight-bold has-text-dark is-size-6 mb-0">Não Tenho Boca, e Preciso Gritar</p>
+                                            <p class="is-size-7 has-text-grey">Harlan Ellison</p>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="has-text-centered">1</td>
+
+                                <td class="has-text-right has-text-grey">R$ 64,90</td>
+
+                                <td class="has-text-right has-text-weight-bold">R$ 64,90</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr class="has-background-white-ter">
+                                <th colspan="3" class="has-text-right is-size-5 is-vcentered">Total do pedido:</th>
+
+                                <th class="has-text-right is-size-4 has-text-danger">R$177,70</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <div class="is-flex is-justidy-content-flex-end mt-5">
+                <a href="carrinho.html#compra-ok" class="button is-success is-medium has-text-weight-bold shadow-sm">
+                    <span class="mr-2">Finalizar Compra ✓</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white mt-6 p-5">
+        <div class="content has-text-centered">
+            <p>
+                © 2026 <strong class="has-text-warning">HyperBook</strong> — Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
