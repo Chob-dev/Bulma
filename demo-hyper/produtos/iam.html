@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria HyperBook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        #nav-toggle { display: none; }
+        #nav-toggle:checked ~ .navbar-menu { display: block !important; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar is-dark" role="navigation">
+        <div class="container">
+
+            <input type="checkbox" name="" id="nav-toggle">
+
+            <div class="navbar-brand">
+                <a href="index.html" class="navbar-item is-size-4">
+                    <strong class="has-text-weight-bold">Hyper<span class="has-text-warning">Book</span></strong>
+                </a>
+
+                <label for="nav-toggle" role="button" class="navbar-burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </label>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="sobre.html" class="navbar-item">Sobre</a>
+                    <a href="login.html" class="navbar-item">Sair</a>
+                    <a href="carrinho.html" class="navbar-item">Carrinho</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section is-flex-grow-1">
+        <div class="container" style="max-width: 960px;">
+            <a href="../index.html" class="button is-small is-ghost mb-4 pl-0 has-text-grey-dark">← Voltar ao catálogo</a>
+
+            <div class="box p-5 p-6-mobile">
+                <div class="columns is-variable is-6">
+                    <div class="column is-4 has-text-centered">
+                        <figure class="image is-inline-block" style="max-width: 300px; margin: 0 auto;">
+                            <img src="../imagens/não tenho boca e preciso gritar.webp" alt="Capa" style="border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                        </figure>
+                    </div>
+
+                    <div class="column is-8">
+                    <nav class="breadcrumb is-small has-bullet-separator has-text-grey mb-3" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="/principal/index.html">Catálogo</a></li>
+
+                            <li><a href="#">Ficção Científica</a></li>
+
+                            <li class="is-active"><a href="#">Não Tenho boca, e Preciso Gritar</a></li>
+                        </ul>
+                    </nav>
+
+                    <span class="tag is-link is-light mb-2">Ficção Científica</span>
+
+                    <h1 class="title is-2 mb-2">Não Tenho Boca, e Preciso Gritar</h1>
+                    <p class="subtitle is-5 has-text-grey mb-5">por <strong>Harlan Ellison</strong></p>
+
+                    <div class="mb-5">
+                        <span class="is-size-2 has-text-dark has-text-weight-bold">R$ 64,90</span>
+                    </div>
+
+                    <div class="mb-6">
+                        <a href="../carrinho.html" class="button is-link is-medium has-text-weight-bold">
+                            <span class="mr-2">+ Adicionar ao carrinho</span>
+                        </a>
+                    </div>
+
+                    <h3 class="title is-5 mb-3">Especificações</h3>
+                    <table class="table is-narrow is-fullwidth is-striped mb-5">
+                        <tbody>
+                            <tr><th class="has-text-grey">Páginas</th><td>192</td></tr>
+
+                            <tr><th class="has-text-grey">Editora</th><td>Aleph</td></tr>
+
+                            <tr><th class="has-text-grey">Idioma</th><td>Português</td></tr>
+
+                            <tr><th class="has-text-grey">ISBN</th><td>978-65-5858-198-8</td></tr>
+
+                            <tr><th class="has-text-grey">Ano</th><td>1967 (ed. 2022)</td></tr>
+                            
+                            <tr><th class="has-text-grey">Formato</th><td>Brochura</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h3 class="title is-5 mb-3">Sinopse</h3>
+                    <div class="content has-text-grey-dark">
+                        <p>Em um futuro pós-apocalíptico, um supercomputador chamado AM exterminou quase toda a humanidade e mantém cinco sobreviventes vivos eternamente — apenas para torturá-los. O conto mais perturbador da ficção científica americana, que deu nome ao livro de contos de Ellison. Obra visceral sobre ódio, poder e o que significa ser humano.</p>
+                        <p><a href="https://pt.wikipedia.org/wiki/I_Have_No_Mouth,_and_I_Must_Scream" target="_blank" class="has-text-link">Mais detalhes na Wikipedia ↗</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white mt-auto p-5">
+        <div class="content has-text-centered">
+            <p>© 2026 <strong class="has-text-warning">HyperBook</strong> — Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria HyperBook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        #msg-enviada:target{display: flex !important; z-index: 1000;}
+    </style>
+</head>
+<body>
+
+    <div id="msg-enviada" class="modal" style="display: none;">
+        <div class="modal-background"></div>
+        
+        <div class="modal-content">
+            <div class="box has-text-centered p-6">
+                <span class="is-size-1 block mb-3">
+                    <h1 class="title is-3 has-text-dark mb-5">
+                        Hyper<span class="has-text-warning">Book</span>
+                    </h1>
+                </span>
+                
+                <p class="title is-4 has-text-success">Senha enviada!</p>
+
+                <p class="subtitle is-6 mt-3 mb-5">
+                    Verifique sua caixa de entrada e siga as instruções para redefinir sua senha.
+                </p>
+
+                <a href="login.html" class="button is-link is-fullwidth">Ir para o login</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero is-fullheight has-background-light">
+        <div class="hero-body p-4">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-4-desktop is-6-tablet">
+                        <div class="box p-5 shadow-lg">
+                            <div class="has-text-centered mb-5">
+                                <h1 class="title is-3 has-text-dark mb-1">
+                                    Hyper<span class="has-text-warning">Book</span>
+                                </h1>
+                                <p class="subtitle is-6 has-text-grey">Recuperação de acesso</p>
+                            </div>
+
+                            <p class="is-size-7 has-text-grey mb-4 has-text-centered">
+                                Informe o e-mail cadastrado e enviaremos um link para redefinir sua senha.
+                            </p>
+
+                            <form action="esqueceu-senha.html#msg-enviada">
+                                <div class="field mb-5">
+                                    <label class="label" for="email">E-mail</label>
+                                    <div class="control">
+                                        <input class="input" type="email" name="email" id="email" placeholder="email@exemplo.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="field">
+                                    <div class="control">
+                                        <button type="submit" class="button is-link is-fullwidth has-text-weight-bold">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="has-text-centered mt-4 is-size-7">
+                                <a href="login.html" class="has-text-grey-dark">← Voltar ao login</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

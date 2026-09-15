@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria HyperBook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        #nav-toggle { display: none; }
+        #nav-toggle:checked ~ .navbar-menu { display: block !important; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar is-dark" role="navigation">
+        <div class="container">
+
+            <input type="checkbox" name="" id="nav-toggle">
+
+            <div class="navbar-brand">
+                <a href="index.html" class="navbar-item is-size-4">
+                    <strong class="has-text-weight-bold">Hyper<span class="has-text-warning">Book</span></strong>
+                </a>
+
+                <label for="nav-toggle" role="button" class="navbar-burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </label>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="sobre.html" class="navbar-item">Sobre</a>
+                    <a href="login.html" class="navbar-item">Sair</a>
+                    <a href="carrinho.html" class="navbar-item">Carrinho</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section is-flex-grow-1">
+        <div class="container" style="max-width: 960px;">
+            <a href="../index.html" class="button is-small is-ghost mb-4 pl-0 has-text-grey-dark">← Voltar ao catálogo</a>
+
+            <div class="box p-5 p-6-mobile">
+                <div class="columns is-variable is-6">
+                    <div class="column is-4 has-text-centered">
+                        <figure class="image is-inline-block" style="max-width: 300px; margin: 0 auto;">
+
+                            
+                            <img src="../imagens/o medico e o monstro.jpg" style="border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                        </figure>
+                    </div>
+
+                    <div class="column is-8">
+                    <nav class="breadcrumb is-small has-bullet-separator has-text-grey mb-3" aria-label="breadcrumbs">
+                        <ul>
+                            <li><a href="../index.html">Catálogo</a></li>
+
+                            <li><a href="#">Clássico / Terror</a></li>
+
+                            <li class="is-active"><a href="#">O Médico e o Monstro</a></li>
+                        </ul>
+                    </nav>
+
+                    <span class="tag is-link is-light mb-2">Clássico / Terror</span>
+
+                    <h1 class="title is-2 mb-2">O Médico e o Monstro</h1>
+                    <p class="subtitle is-5 has-text-grey mb-5">por <strong>Robert Louis Stevenson</strong></p>
+
+                    <div class="mb-5 is-flex is-align-items-baseline">
+                        <span class="is-size-4 has-text-grey-light mr-3">
+                            <del>R$ 35,90</del>
+                        </span>
+                        <span class="is-size-2 has-text-danger has-text-weight-bold">R$ 28,90</span>
+                        <span class="tag is-warning is-small ml-3 tag-desconto">-20%</span>
+
+                    </div>
+
+                    <div class="mb-6">
+                        <a href="../carrinho.html" class="button is-link is-medium has-text-weight-bold">
+                            <span class="mr-2">+ Adicionar ao carrinho</span>
+                        </a>
+                    </div>
+
+                    <h3 class="title is-5 mb-3">Especificações</h3>
+                    <table class="table is-narrow is-fullwidth is-striped mb-5">
+                        <tbody>
+                            <tr><th class="has-text-grey">Páginas</th><td>144</td></tr>
+
+                            <tr><th class="has-text-grey">Editora</th><td>Martin Claret</td></tr>
+
+                            <tr><th class="has-text-grey">Idioma</th><td>Português</td></tr>
+
+                            <tr><th class="has-text-grey">ISBN</th><td>978-85-7232-088-4</td></tr>
+
+                            <tr><th class="has-text-grey">Ano</th><td>1886 (ed. 2019)</td></tr>
+                            
+                            <tr><th class="has-text-grey">Formato</th><td>Brochura</td></tr>
+                        </tbody>
+                    </table>
+
+                    <h3 class="title is-5 mb-3">Sinopse</h3>
+                    <div class="content has-text-grey-dark">
+                        <p>O Dr. Jekyll é um médico respeitado que, ao desenvolver uma poção experimental, libera seu alter ego perverso — o sinistro Mr. Hyde. Um dos primeiros estudos literários sobre a dualidade humana e os perigos da ciência sem ética moral, escrito em apenas seis dias febricitantes.</p>
+                        <p><a href="https://pt.wikipedia.org/wiki/Strange_Case_of_Dr_Jekyll_and_Mr_Hyde" target="_blank" class="has-text-link">Mais detalhes na Wikipedia ↗</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer has-background-dark has-text-white mt-auto p-5">
+        <div class="content has-text-centered">
+            <p>© 2026 <strong class="has-text-warning">HyperBook</strong> — Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
